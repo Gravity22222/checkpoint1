@@ -1,10 +1,12 @@
-package dto;
+package br.com.fiap.checkpoint1.dto;
 
 public class PacienteRequestCreate {
     private String nome;
+    private String endereço;
     private String bairro;
     private String email;
     private String telefone_completo;
+    
 
     public String getBairro() {
         return bairro;
@@ -36,6 +38,14 @@ public class PacienteRequestCreate {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getEndereço() {
+        return endereço;
+    }
+
+    public void setEndereço(String endereço) {
+        this.endereço = endereço;
     }
 
 }
